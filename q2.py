@@ -10,7 +10,6 @@ PARENTHESIS_LEFT = "(°)"
 PARENTHESIS_RIGHT = "(^)"
 BRACE_LEFT = "({)"
 BRACE_RIGHT = "(})"
-
 IF = "(i.f)"
 ELSE = "(e.(l.(s.e)))"
 KEYWORD_INT = "(i.(n.t))"

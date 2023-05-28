@@ -47,18 +47,6 @@ def remover_caracteres(string, caracteres):
 dfa = DFA()
 
 
-#Descomentar se quiser pegar os dados direto do q3.py
-# import q3
-# dfa.start_state =  q3.exportStartState
-# identificadores = q3.exportIdentificadores
-# transitions = q3.exportTransitions
-# final_states = q3.exportFinalStates
-
-
-
-
-
-
 file = open("dados.txt", "r")
 contents = file.read()
 file.close()
@@ -121,11 +109,8 @@ for caractere in entrada:
 if palavra_atual:
     palavras_e_linhas.append(palavra_atual)
 
-# Resultado
-print(palavras_e_linhas)
 
 #saida
-
 file = open("saidaQ4.txt", "w")
 
 
@@ -157,11 +142,9 @@ for palavra in palavras_e_linhas:
             file.write("IDENTIFIER ")
         else:
             file.write(ident[0] + " ")
-            
-
-        print("o",ident)
     elif palavra == "\n":
         file.write("\n")
     else:
-        print("ERRO")
         file.write("ERRO ")
+
+print ("Arquivo saidaQ4.txt gerado com sucesso!")
