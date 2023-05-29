@@ -138,6 +138,12 @@ for palavra in palavras_e_linhas:
             file.write("KEYWORD_INT ")
         elif 'KEYWORD_STRING' in ident:
             file.write("KEYWORD_STRING ")
+        elif 'IF' in ident:
+            file.write("IF ")
+        elif 'ELSE' in ident:
+            file.write("ELSE ")
+        elif 'RETURN' in ident:
+            file.write("RETURN ")
         elif 'IDENTIFIER' in ident:
             file.write("IDENTIFIER ")
         else:
